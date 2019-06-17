@@ -14,7 +14,7 @@ class satisfaction_co2:
 
         for line in value:
             if line.startswith(co2_header):
-                return float(line.replace(humidity_header, ""))
+                return float(line.replace(co2_header, ""))
 
         return 0
 

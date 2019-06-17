@@ -295,7 +295,7 @@ def scenario4():
 def scenario5():
     SIMULATION_LOOP = 10000
 
-    SATISFACTION_THRESHOLD = 0.5
+    SATISFACTION_THRESHOLD = 0.8
 
     # Temperature value
     TARGET_TEMP_VAL = 20
@@ -337,9 +337,9 @@ def scenario5():
     sensor3.add_feature(humidity_sensor3)
 
     # Declare CO2 feature
-    co2_sensor1 = feature_humidity(TARGET_CO2_VAL, ERR_CO2_VAL)
-    co2_sensor2 = feature_humidity(TARGET_CO2_VAL, ERR_CO2_VAL * 2)
-    co2_sensor3 = feature_humidity(TARGET_CO2_VAL, ERR_CO2_VAL * 4)
+    co2_sensor1 = feature_co2(TARGET_CO2_VAL, ERR_CO2_VAL)
+    co2_sensor2 = feature_co2(TARGET_CO2_VAL, ERR_CO2_VAL * 2)
+    co2_sensor3 = feature_co2(TARGET_CO2_VAL, ERR_CO2_VAL * 4)
 
     sensor1.add_feature(co2_sensor1)
     sensor2.add_feature(co2_sensor2)

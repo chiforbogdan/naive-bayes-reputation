@@ -517,7 +517,7 @@ def main():
     # Scenario 5: 3 sensors which deliver temperature, humidity and CO2 value. Sensor1 delivers the best values, followed by sensor2 and sensor3.
     #scenario5()
 
-    # Scenario 5: 3 sensors which deliver temperature, humidity and CO2 value. Sensor1 delivers the best values, followed by sensor2 and sensor3 for half of the simulation. For the second half of the simulation, Sensor3 delivers the best values, followed by Sensor2 and Sensor1.
+    # Scenario 6: 3 sensors which deliver temperature, humidity and CO2 value. Sensor1 delivers the best values, followed by sensor2 and sensor3 for half of the simulation. For the second half of the simulation, Sensor3 delivers the best values, followed by Sensor2 and Sensor1.
     scenario6()
 
 if __name__ == "__main__":

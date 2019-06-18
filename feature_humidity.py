@@ -13,6 +13,10 @@ class feature_humidity:
         self.__target_val = target_val
         self.__error_val = error_val
 
+    def set_target_error(self, target_val, error_val):
+        self.__target_val = target_val
+        self.__error_val = error_val
+
     def get_feature_val(self):
         
         # Generate a random value and compute a value within the error_val range

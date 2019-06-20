@@ -60,7 +60,7 @@ def scenario1():
     legend = []
     for sensor_item in sensors:
         legend.append(sensor_item.get_name())
-        plt.plot(nb[sensor_item.get_name()].get_reputation_history())
+        plt.plot(nb[sensor_item.get_name()].get_reputation_history([feature_type.TEMPERATURE]))
 
     plt.xlabel("Steps")
     plt.ylabel("Trust reputation probability")
@@ -135,7 +135,7 @@ def scenario2():
     legend = []
     for sensor_item in sensors:
         legend.append(sensor_item.get_name())
-        plt.plot(nb[sensor_item.get_name()].get_reputation_history())
+        plt.plot(nb[sensor_item.get_name()].get_reputation_history([feature_type.TEMPERATURE, feature_type.HUMIDITY]))
 
     plt.xlabel("Steps")
     plt.ylabel("Trust reputation probability")
@@ -210,7 +210,7 @@ def scenario3():
     legend = []
     for sensor_item in sensors:
         legend.append(sensor_item.get_name())
-        plt.plot(nb[sensor_item.get_name()].get_reputation_history())
+        plt.plot(nb[sensor_item.get_name()].get_reputation_history([feature_type.TEMPERATURE, feature_type.HUMIDITY]))
 
     plt.xlabel("Steps")
     plt.ylabel("Trust reputation probability")
@@ -285,7 +285,7 @@ def scenario4():
     legend = []
     for sensor_item in sensors:
         legend.append(sensor_item.get_name())
-        plt.plot(nb[sensor_item.get_name()].get_reputation_history())
+        plt.plot(nb[sensor_item.get_name()].get_reputation_history([feature_type.TEMPERATURE, feature_type.HUMIDITY]))
 
     plt.xlabel("Steps")
     plt.ylabel("Trust reputation probability")
@@ -376,7 +376,7 @@ def scenario5():
     legend = []
     for sensor_item in sensors:
         legend.append(sensor_item.get_name())
-        plt.plot(nb[sensor_item.get_name()].get_reputation_history())
+        plt.plot(nb[sensor_item.get_name()].get_reputation_history([feature_type.TEMPERATURE, feature_type.HUMIDITY, feature_type.CO2]))
 
     plt.xlabel("Steps")
     plt.ylabel("Trust reputation probability")
@@ -489,7 +489,7 @@ def scenario6():
     legend = []
     for sensor_item in sensors:
         legend.append(sensor_item.get_name())
-        plt.plot(nb[sensor_item.get_name()].get_reputation_history())
+        plt.plot(nb[sensor_item.get_name()].get_reputation_history([feature_type.TEMPERATURE, feature_type.HUMIDITY, feature_type.CO2]))
 
     plt.xlabel("Steps")
     plt.ylabel("Trust reputation probability")
